@@ -50,13 +50,13 @@ img {
 }
 
 .about-me-section img {
-    flex: 1 1 33%; /* Take up one-third of the horizontal space */
+    flex: 0 0 calc(33% - 10px); /* Take up one-third of the horizontal space minus some margin */
     max-width: 100%;
     height: auto;
     margin-right: 20px; /* Add some space between the image and text */
 }
 
 .about-me-section p {
-    flex: 2 1 67%; /* Take up two-thirds of the horizontal space */
+    flex: 0 0 calc(67% - 10px); /* Take up two-thirds of the horizontal space minus some margin */
     margin: 0;
 }
