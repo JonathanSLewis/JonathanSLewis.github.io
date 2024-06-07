@@ -4,6 +4,13 @@ body {
     margin: 0;
     padding: 0;
 }
+h1 {
+    font-size: 33px; /* Change the font size of h1 elements to 32 pixels */
+}
+
+p {
+    font-size: 16px; /* Change the font size of p elements to 16 pixels */
+}
 
 .container {
     max-width: 960px;
