@@ -1,120 +1,46 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jonathan Lewis</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 0;
-        }
-        
-        header {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-        
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        section {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-            padding: 20px;
-        }
-        
-        h1, h2 {
-            margin-bottom: 20px;
-        }
-        
-        p {
-            line-height: 1.6;
-        }
-        
-        footer {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-        /* Arboria Black */
-@font-face {
-    font-family: 'Arboria Black';
-    src: url('fonts/Arboria-Black.ttf') format('truetype');
+body {
+    font-family: 'Arboria Book', Arial, sans-serif;
+    background-color: #F3F4FA;
+    margin: 0;
+    padding: 0;
 }
 
-/* Arboria Black Italic */
-@font-face {
-    font-family: 'Arboria Black Italic';
-    src: url('fonts/Arboria-BlackItalic.ttf') format('truetype');
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* Arboria Bold */
-@font-face {
-    font-family: 'Arboria Bold';
-    src: url('fonts/Arboria-Bold.ttf') format('truetype');
+section {
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
 }
 
-/* Arboria Bold Italic */
-@font-face {
-    font-family: 'Arboria Bold Italic';
-    src: url('fonts/Arboria-BoldItalic.ttf') format('truetype');
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
 
-/* Arboria Book */
-@font-face {
-    font-family: 'Arboria Book';
-    src: url('fonts/Arboria-Book.ttf') format('truetype');
+header h1 {
+    margin: 0;
 }
 
-/* Arboria Book Italic */
-@font-face {
-    font-family: 'Arboria Book Italic';
-    src: url('fonts/Arboria-BookItalic.ttf') format('truetype');
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
 
-/* Arboria Light */
-@font-face {
-    font-family: 'Arboria Light';
-    src: url('fonts/Arboria-Light.ttf') format('truetype');
+footer p {
+    margin: 0;
 }
 
-/* Arboria Light Italic */
-@font-face {
-    font-family: 'Arboria Light Italic';
-    src: url('fonts/Arboria-LightItalic.ttf') format('truetype');
+img {
+    max-width: 100%;
+    height: auto;
 }
-
-/* Arboria Medium */
-@font-face {
-    font-family: 'Arboria Medium';
-    src: url('fonts/Arboria-Medium.ttf') format('truetype');
-}
-
-/* Arboria Medium Italic */
-@font-face {
-    font-family: 'Arboria Medium Italic';
-    src: url('fonts/Arboria-MediumItalic.ttf') format('truetype');
-}
-
-/* Arboria Thin */
-@font-face {
-    font-family: 'Arboria Thin';
-    src: url('fonts/Arboria-Thin.ttf') format('truetype');
-}
-
-/* Arboria Thin Italic */
-@font-face {
-    font-family: 'Arboria Thin Italic';
-    src: url('fonts/Arboria-ThinItalic.ttf') format('truetype');
-}
-    </style>
