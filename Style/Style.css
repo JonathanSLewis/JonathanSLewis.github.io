@@ -65,6 +65,7 @@ img {
 
 .about-me-content {
     display: flex;
+    justify-content: space-between; /* Spacing items evenly across the container */
     flex-wrap: wrap; /* Allow items to wrap */
 }
 
@@ -84,14 +85,14 @@ img {
 .button-container {
     display: flex;
     justify-content: flex-end; /* Align buttons to the right */
-    margin-top: auto; /* Align buttons to the bottom */
+    align-items: flex-end; /* Align buttons to the bottom */
     padding-top: 20px; /* Add space between text and buttons */
 }
 
 .about-button {
-    background-color: #b3d6ff;
-    color: #002e64;
-    border: 2px solid #b3d6ff;
+    background-color: #002e64;
+    color: white;
+    border: 2px solid #002e64;
     border-radius: 10px;
     padding: 10px 15px;
     margin-left: 10px; /* Add spacing between buttons */
@@ -104,6 +105,6 @@ img {
 
 .about-button:hover {
     background-color: transparent;
-    color: #b3d6ff;
+    color: #002e64;
 }
 
