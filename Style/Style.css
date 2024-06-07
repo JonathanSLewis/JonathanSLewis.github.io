@@ -44,3 +44,19 @@ img {
     max-width: 100%;
     height: auto;
 }
+.about-me-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-me-section img {
+    flex: 1 1 33%; /* Take up one-third of the horizontal space */
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px; /* Add some space between the image and text */
+}
+
+.about-me-section p {
+    flex: 2 1 67%; /* Take up two-thirds of the horizontal space */
+    margin: 0;
+}
