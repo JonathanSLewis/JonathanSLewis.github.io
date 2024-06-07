@@ -30,6 +30,7 @@ section {
 
 header {
     max-width: 960px;
+    align: center;
     background-color: #b3d6ff;
     color: black;
     text-align: center;
@@ -40,6 +41,7 @@ header {
 
 footer {
     max-width: 960px;
+    align: center;
     background-color: #b3d6ff;
     color: black;
     text-align: center;
