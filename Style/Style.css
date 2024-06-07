@@ -56,18 +56,19 @@ img {
 .about-me-content {
     display: flex;
     align-items: flex-start; /* Align items at the start */
-    flex-wrap: wrap; /* Allow items to wrap */
 }
 
-.about-me-section img {
-    flex: 0 0 calc(33% - 20px); /* Take up one-third of the horizontal space minus some margin */
-    max-width: 300px; /* Maximum width of 300px */
-    height: auto;
+.about-me-content img {
+    flex: 0 0 300px; /* Image takes 300px width */
+    max-width: 100%; /* Ensure image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
     margin-right: 20px; /* Add some space between the image and text */
 }
 
-.about-me-section p {
-    flex: 0 0 calc(67% - 20px); /* Take up two-thirds of the horizontal space minus some margin */
-    margin: 0;
-    overflow: hidden; /* Prevent text overflow */
+.text-container {
+    flex: 1; /* Text container takes remaining space */
+}
+
+.about-me-content p {
+    margin: 0; /* Remove default margins */
 }
