@@ -55,20 +55,20 @@ img {
 
 .about-me-content {
     display: flex;
-    align-items: flex-start; /* Align items at the start */
+    flex-wrap: wrap; /* Allow items to wrap */
 }
 
-.about-me-content img {
-    flex: 0 0 300px; /* Image takes 300px width */
+.image-column {
+    flex: 0 0 300px; /* Image column takes 500px width */
     max-width: 100%; /* Ensure image doesn't exceed its container */
-    height: auto; /* Maintain aspect ratio */
     margin-right: 20px; /* Add some space between the image and text */
 }
 
-.text-container {
-    flex: 1; /* Text container takes remaining space */
+.text-column {
+    flex: 1; /* Text column takes remaining space */
 }
 
 .about-me-content p {
     margin: 0; /* Remove default margins */
 }
+
