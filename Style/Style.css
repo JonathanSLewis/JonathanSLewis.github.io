@@ -81,4 +81,25 @@ img {
 .about-me-content p {
     margin: 0; /* Remove default margins */
 }
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    margin-top: auto; /* Align buttons to the bottom */
+}
+
+.about-button {
+    background-color: #b3d6ff;
+    color: #002e64;
+    border: 2px solid #b3d6ff;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-left: 10px; /* Add spacing between buttons */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.about-button:hover {
+    background-color: transparent;
+    color: #b3d6ff;
+}
 
