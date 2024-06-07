@@ -46,16 +46,28 @@ img {
 }
 .about-me-section {
     display: flex;
+    flex-direction: column;
+}
+
+.about-me-section h2 {
+    width: 100%; /* Title takes full width */
+}
+
+.about-me-content {
+    display: flex;
+    align-items: flex-start; /* Align items at the start */
+    flex-wrap: wrap; /* Allow items to wrap */
 }
 
 .about-me-section img {
-    flex: 0 0 33%; /* Take up one-third of the horizontal space */
-    max-width: 100%;
+    flex: 0 0 calc(33% - 20px); /* Take up one-third of the horizontal space minus some margin */
+    max-width: 300px; /* Maximum width of 300px */
     height: auto;
     margin-right: 20px; /* Add some space between the image and text */
 }
 
 .about-me-section p {
-    flex: 0 0 67%; /* Take up two-thirds of the horizontal space */
+    flex: 0 0 calc(67% - 20px); /* Take up two-thirds of the horizontal space minus some margin */
     margin: 0;
+    overflow: hidden; /* Prevent text overflow */
 }
