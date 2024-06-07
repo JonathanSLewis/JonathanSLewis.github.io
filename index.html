@@ -93,7 +93,7 @@
         header {
             text-align: center;
             padding: 50px 0;
-            background-color: #e6f7ff;
+            background-color: transparent;
             border-bottom: 2px solid #b3e0ff;
         }
         header h1 {
@@ -111,8 +111,8 @@
         h2 {
             font-family: 'Arboria-Bold';
             font-size: 2em;
-            color: #007acc;
-            border-bottom: 2px solid #b3e0ff;
+            color: #297deo;
+            border-bottom: 0px transparent;
             padding-bottom: 10px;
         }
         .section-content {
@@ -124,8 +124,8 @@
         footer {
             text-align: center;
             padding: 20px 0;
-            background-color: #e6f7ff;
-            border-top: 2px solid #b3e0ff;
+            background-color: transparent;
+            border-top: 0px transparent;
         }
         .contact-info {
             list-style: none;
@@ -149,6 +149,7 @@
         <section>
             <h2>About Me</h2>
             <div class="section-content">
+                <img src="path/to/your/image.jpg" alt="Jonathan Lewis" style="max-width: 100%; height: auto;">
                 <p>Hello! I'm Jonathan Lewis, a passionate and creative individual with a knack for playful designs and innovative solutions. Welcome to my personal webpage where you can learn more about me, my work, and how to get in touch.</p>
             </div>
         </section>
@@ -179,15 +180,18 @@
             <h2>Contact</h2>
             <div class="section-content">
                 <ul class="contact-info">
-                    <li>Email: jonathan@example.com</li>
+                    <li>Email: <a href="mailto:lewiss.jonathan@gmail.com">lewiss.jonathan@gmail.com</li>
                     <li>Phone: (123) 456-7890</li>
-                    <li>LinkedIn: <a href="https://www.linkedin.com/in/jonathanlewis">linkedin.com/in/jonathanlewis</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/jonathanlewiss">linkedin.com/in/jonathanlewis</a></li>
                 </ul>
             </div>
         </section>
         <footer>
-            <p>&copy; 2024 Jonathan Lewis. All rights reserved.</p>
-        </footer>
+    <p>&copy; <span id="currentYear"></span> Jonathan Lewis. All rights reserved.</p>
+</footer>
+<script>
+    document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+</script>
     </div>
 </body>
 </html>
