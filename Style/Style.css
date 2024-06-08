@@ -106,6 +106,8 @@ p {
     margin-block-start: 0; /* Remove the default margin from p */
 }
 
+h2 { margin-block-start: 0;
+}
 .portfolio-item {
     position: relative;
     width: 100%;
@@ -148,6 +150,11 @@ p {
     right: 10px
     color: white;
     z-index: 2;
+}
+
+/* Override the visited link color to white */
+.portfolio-text a:visited {
+    color: white;
 }
 
 .portfolio-text h3 {
