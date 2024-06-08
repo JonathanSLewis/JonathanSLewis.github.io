@@ -3,6 +3,7 @@ body {
     background-color: #F3F4FA;
     margin: 20;
     padding: 0;
+    justify-content: center;
     }
     h1 {font-size: 52px;}
     h2 {font-size: 33px;}
@@ -70,6 +71,7 @@ img {
 
 .text-column {
     flex: 1; /* Text column takes remaining space */
+    min-width: 290;
 }
 
 .about-me-content p {
@@ -78,10 +80,10 @@ img {
 .button-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* Align buttons to the right */
-    /*align-items: flex-end; /* Align buttons to the bottom */
-    padding-top: 20px; /* Add space between text and buttons */
+    justify-content: flex-end; /* Align buttons to the bottom */
+    /*padding-top: 20px; /* Add space between text and buttons */
     gap: 10px;
+    inline-size: auto;
 }
 
 .about-button {
