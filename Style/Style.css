@@ -3,6 +3,7 @@ body {
     background-color: #F3F4FA;
     margin: 20;
     padding: 0;
+    gap: 20;
     justify-content: center;
     }
     h1 {font-size: 52px;}
@@ -12,7 +13,6 @@ body {
 
 .container {
     max-width: 960px;
-    padding: 20px;
 }
 
 section {
