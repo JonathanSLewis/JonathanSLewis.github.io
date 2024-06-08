@@ -21,7 +21,7 @@ section {
     margin: 0 0 20px;
     padding: 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 header {
@@ -51,17 +51,12 @@ footer {
 img {
     max-width: 100%;
     height: auto;
-}
-.about-me-section {
-    display: flex;
-    flex-direction: column;
-}
 
-.about-me-section h2 {
+.section-title h2 {
     width: 100%; /* Title takes full width */
 }
 
-.about-me-content {
+.section-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between; /* Spacing items evenly across the container */
@@ -79,10 +74,6 @@ img {
     flex: 1; /* Text column takes remaining space */
     min-width: 290px;
 }
-
-.about-me-content p {
-    /*margin: 0; /* Remove default margins */
-}
 .button-container {
     display: flex;
     flex-direction: row;
@@ -91,7 +82,7 @@ img {
     inline-size: fit-content;
 }
 
-.about-button {
+.button {
     background-color: #002e64;
     color: white;
     border: 2px solid #002e64;
@@ -105,7 +96,7 @@ img {
     font-weight: 500; /* Set font weight */
 }
 
-.about-button:hover {
+.button:hover {
     background-color: transparent;
     color: #002e64;
 }
