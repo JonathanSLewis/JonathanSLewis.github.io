@@ -6,7 +6,7 @@ body {
     gap: 20;
     }
     h1 {font-size: 52px;}
-    h2 {font-size: 33px; margin-block-start: 0;}
+    h2 {font-size: 33px;}
     h3 {font-size: 24px;}
     p {font-size: 18px;}
 
@@ -22,6 +22,7 @@ section {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 header {
@@ -105,9 +106,10 @@ body .button:hover {
 p {
     margin-block-start: 0; /* Remove the default margin from p */
 }
-
-h2 { margin-block-start: 0;
+h2 {
+    margin: 0; /* Remove the top margin */
 }
+
 .portfolio-item {
     position: relative;
     width: 100%;
