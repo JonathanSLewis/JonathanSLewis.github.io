@@ -1,7 +1,7 @@
 body {
     font-family: 'Arboria Book', Arial, sans-serif;
     background-color: #F3F4FA;
-    margin: 0;
+    margin: 20;
     padding: 0;
     }
     h1 {font-size: 52px;}
@@ -28,9 +28,7 @@ header {
     background-color: #b3d6ff;
     color: black;
     text-align: center;
-    padding: 20px 0;
     border-radius: 10px; /* Add rounded corners */
-    margin: 20px; /* Add margin on all edges */
 }
 
 footer {
@@ -41,7 +39,6 @@ footer {
     text-align: center;
     padding: 20px 0;
     border-radius: 10px; /* Add rounded corners */
-    margin: 20px; /* Add margin on all edges */
 }
 
 img {
@@ -50,7 +47,7 @@ img {
 }
 .about-me-section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .about-me-section h2 {
@@ -59,7 +56,7 @@ img {
 
 .about-me-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between; /* Spacing items evenly across the container */
     flex-wrap: wrap; /* Allow items to wrap */
     gap: 20px;
@@ -76,7 +73,7 @@ img {
 }
 
 .about-me-content p {
-    margin: 0; /* Remove default margins */
+    /*margin: 0; /* Remove default margins */
 }
 .button-container {
     display: flex;
@@ -84,6 +81,7 @@ img {
     justify-content: flex-end; /* Align buttons to the right */
     align-items: flex-end; /* Align buttons to the bottom */
     padding-top: 20px; /* Add space between text and buttons */
+    gap: 10px;
 }
 
 .about-button {
