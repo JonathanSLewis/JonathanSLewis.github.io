@@ -59,9 +59,10 @@ img {
 
 .about-me-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between; /* Spacing items evenly across the container */
     flex-wrap: wrap; /* Allow items to wrap */
+    gap: 20px;
 }
 
 .image-column {
