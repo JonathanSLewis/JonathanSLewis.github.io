@@ -47,7 +47,7 @@ img {
 }
 .about-me-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .about-me-section h2 {
@@ -78,8 +78,8 @@ img {
 .button-container {
     display: flex;
     flex-direction: column;
-    /*justify-content: flex-end; /* Align buttons to the right */
-    align-items: flex-end; /* Align buttons to the bottom */
+    justify-content: flex-end; /* Align buttons to the right */
+    /*align-items: flex-end; /* Align buttons to the bottom */
     padding-top: 20px; /* Add space between text and buttons */
     gap: 10px;
 }
