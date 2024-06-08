@@ -118,14 +118,14 @@ p {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    min-height: 300px;
-    object-fit: cover;
 }
 
 .portfolio-image img {
     width: 100%;
     height: auto;
     display: block;
+    min-height: 300px
+    object-fit: cover;
 }
 
 .overlay {
@@ -150,10 +150,12 @@ p {
 
 .portfolio-text h3 {
     margin: 0;
+    color: white;
 }
 
 .portfolio-text p {
     margin: 5px 0 0;
+    color: white;
 }
 
 .portfolio-text a {
