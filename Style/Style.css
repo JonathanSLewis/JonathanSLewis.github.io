@@ -4,12 +4,10 @@ body {
     margin: 0;
     padding: 0;
     }
-    h1 {font-size: 52px; /* Change the font size of h1 elements to 32 pixels */
-    }
-    h2 {font-size: 33px; /* Change the font size of h1 elements to 32 pixels */
-    }
-    p {font-size: 18px; /* Change the font size of p elements to 16 pixels */
-    }
+    h1 {font-size: 52px;}
+    h2 {font-size: 33px;}
+    h3 {font-size: 24px;}
+    p {font-size: 18px}
 
 .container {
     max-width: 960px;
