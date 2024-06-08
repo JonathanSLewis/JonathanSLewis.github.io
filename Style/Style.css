@@ -118,13 +118,15 @@ p {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
+    min-height: 300px;
+    object-fit: cover;
 }
 
 .portfolio-image img {
     width: 100%;
     height: auto;
     display: block;
-    min-height: 300px
+    min-height: 300px;
     object-fit: cover;
 }
 
