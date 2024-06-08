@@ -12,7 +12,6 @@ body {
 
 .container {
     max-width: 960px;
-    margin: 0 auto;
     padding: 20px;
 }
 
@@ -66,7 +65,6 @@ img {
 .image-column {
     flex: 1; /* Image column takes 500px width */
     max-width: 300px; /* Ensure image doesn't exceed its container */
-    margin-right: 20px; /* Add some space between the image and text */
 }
 
 .text-column {
