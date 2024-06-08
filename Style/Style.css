@@ -29,6 +29,9 @@ header {
     color: #002e64;
     text-align: center;
     border-radius: 10px; /* Add rounded corners */
+    height: 150px;
+    margin-bottom: 20px;
+    align-content: center;
 }
 
 footer {
