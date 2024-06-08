@@ -6,7 +6,7 @@ body {
     gap: 20;
     }
     h1 {font-size: 52px;}
-    h2 {font-size: 33px;}
+    h2 {font-size: 33px; margin-block-start: 0;}
     h3 {font-size: 24px;}
     p {font-size: 18px;}
 
