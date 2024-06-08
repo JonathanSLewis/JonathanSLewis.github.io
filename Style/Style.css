@@ -73,6 +73,7 @@ img {
 .text-column {
     flex: 1; /* Text column takes remaining space */
     min-width: 290px;
+    display: flex;
 }
 .button-container {
     display: flex;
@@ -98,6 +99,10 @@ body .button {
 body .button:hover {
     background-color: transparent;
     color: #002e64;
+}
+
+p {
+    margin-block-start: 0; /* Remove the default margin from p */
 }
 <style>
         /* Arboria Black */
