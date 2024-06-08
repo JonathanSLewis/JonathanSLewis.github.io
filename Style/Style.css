@@ -30,20 +30,20 @@ header {
     background-color: #b3d6ff;
     color: black;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
     border-radius: 10px; /* Add rounded corners */
-    margin: 20px 0; /* Add margin to top and bottom */
+    margin: 20px; /* Add margin on all edges */
 }
 
 footer {
     max-width: 960px;
     align: center;
-    background-color: white;
+    background-color: #F3F4FA;
     color: black;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
     border-radius: 10px; /* Add rounded corners */
-    margin: 20px 0; /* Add margin to top and bottom */
+    margin: 20px; /* Add margin on all edges */
 }
 
 img {
@@ -81,6 +81,7 @@ img {
 }
 .button-container {
     display: flex;
+    flex-direction: column;
     justify-content: flex-end; /* Align buttons to the right */
     align-items: flex-end; /* Align buttons to the bottom */
     padding-top: 20px; /* Add space between text and buttons */
