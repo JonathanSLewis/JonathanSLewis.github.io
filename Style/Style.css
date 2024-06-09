@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arboria Book', Arial, sans-serif;
+    font-family: 'Arboria Book';
     background-color: #F3F4FA;
     margin: 20px;
     padding: 0;
@@ -123,7 +123,9 @@ p {
 h2 {
     margin: 0; /* Remove the top margin */
 }
-
+h3 {
+    margin: 0; /* Remove the top margin */
+}
 .portfolio-item {
     position: relative;
     width: 100%;
