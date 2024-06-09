@@ -80,6 +80,8 @@ img {
     min-width: 290px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    max-height: 300px;
 }
 .button-container {
     display: flex;
