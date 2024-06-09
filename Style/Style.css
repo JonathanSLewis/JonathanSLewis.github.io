@@ -64,9 +64,9 @@ img {
 .section-content {
     display: flex;
     flex-direction: row;
-    justify-content: left; /* Spacing items evenly across the container */
+    justify-content: space between; /* Spacing items evenly across the container */
     flex-wrap: wrap; /* Allow items to wrap */
-    gap: 10px;
+    gap: 20px;
 }
 
 .image-column {
@@ -119,7 +119,7 @@ h2 {
 .portfolio-item {
     position: relative;
     width: 100%;
-    max-width: 300px; /* Adjust according to your design */
+    max-width: 290px; /* Adjust according to your design */
     border-radius: 10px;
 }
 
@@ -127,7 +127,7 @@ h2 {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    min-height: 300px;
+    min-height: 290px;
     object-fit: cover;
 }
 
@@ -135,7 +135,7 @@ h2 {
     width: 100%;
     height: auto;
     display: block;
-    min-height: 300px;
+    min-height: 290px;
     object-fit: cover;
 }
 
@@ -179,6 +179,14 @@ h2 {
     text-decoration: none;
 }
 
+.box {
+    flex: 1;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+}
 <style>
         /* Arboria Black */
         @font-face {
