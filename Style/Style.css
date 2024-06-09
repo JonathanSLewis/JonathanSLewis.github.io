@@ -69,6 +69,13 @@ img {
     gap: 20px;
 }
 
+.section-content-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space between; /* Spacing items evenly across the container */
+    flex-wrap: wrap; /* Allow items to wrap */
+    gap: 20px;
+}
 .image-column {
     flex: 1; /* Image column takes 500px width */
     max-width: 300px; /* Ensure image doesn't exceed its container */
