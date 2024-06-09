@@ -74,6 +74,12 @@ img {
     gap: 20px;
 }
 
+.text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
 .text-content-row {
     flex: 1;
     min-width: 290px;
