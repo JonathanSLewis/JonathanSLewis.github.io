@@ -88,7 +88,7 @@ img {
     min-width: 290px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: space-between;
     max-height: 300px;
 }
 .button-container {
@@ -191,7 +191,7 @@ h3 {
 
 .box {
     display: flex;
-    gap: 20px
+    gap: 20px;
     flex: 0.5;
     background-color: #F3F4FA;
     border-radius: 10px;
