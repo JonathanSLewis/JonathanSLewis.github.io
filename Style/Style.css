@@ -69,12 +69,13 @@ img {
     gap: 20px;
 }
 
-.section-content-column {
+.text-content-row {
+    flex: 1;
+    min-width: 290px;
     display: flex;
-    flex-direction: column;
-    justify-content: space between; /* Spacing items evenly across the container */
-    flex-wrap: wrap; /* Allow items to wrap */
-    gap: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 300px
 }
 .image-column {
     flex: 1; /* Image column takes 500px width */
