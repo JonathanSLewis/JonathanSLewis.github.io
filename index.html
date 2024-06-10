@@ -86,15 +86,14 @@
         <section>
             <h2>Examples of work</h2>
             <div class="tabs">
-        <button class="tablinks" onclick="openTab(event, 'Tab1')">Tab 1</button>
-        <button class="tablinks" onclick="openTab(event, 'Tab2')">Tab 2</button>
-        <button class="tablinks" onclick="openTab(event, 'Tab3')">Tab 3</button>
-        <button class="tablinks" onclick="openTab(event, 'Tab4')">Tab 4</button>
-        <button class="tablinks" onclick="openTab(event, 'Tab5')">Tab 5</button>
+        <button class="tablinks active" onclick="openTab(event, 'Tab1')">Website Design</button>
+        <button class="tablinks" onclick="openTab(event, 'Tab2')">Brand Guidelines</button>
+        <button class="tablinks" onclick="openTab(event, 'Tab3')">Visual Identity Enhancement</button>
+        <button class="tablinks" onclick="openTab(event, 'Tab4')">Motion Graphics</button>
+        <button class="tablinks" onclick="openTab(event, 'Tab5')">UI/UX</button>
         </div>
     
-        <div id="Tab1" class="tabcontent">
-            <h3>Tab 1</h3>
+        <div id="Tab1" class="tabcontent" style="display: block;">
             <div class="section-content">
                 <div class="portfolio-item">
                     <a href="https://clarisights.com/">
@@ -136,22 +135,18 @@
         </div>
     
         <div id="Tab2" class="tabcontent">
-            <h3>Tab 2</h3>
             <p>Content for Tab 2</p>
         </div>
     
         <div id="Tab3" class="tabcontent">
-            <h3>Tab 3</h3>
             <p>Content for Tab 3</p>
         </div>
     
         <div id="Tab4" class="tabcontent">
-            <h3>Tab 4</h3>
             <p>Content for Tab 4</p>
         </div>
     
         <div id="Tab5" class="tabcontent">
-            <h3>Tab 5</h3>
             <p>Content for Tab 5</p>
         </div>
         
@@ -190,6 +185,10 @@
             // Show the current tab, and add an "active" class to the button that opened the tab
             document.getElementById(tabName).style.display = "block";
             evt.currentTarget.className += " active";
+           
+            // Set the default tab to be active
+            document.addEventListener("DOMContentLoaded", function() {
+                document.querySelector(".tablinks").click();
         }
 
         </script>
