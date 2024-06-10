@@ -207,6 +207,7 @@ body .button:hover {
 .tabs {
     overflow: hidden;
     background-color: #F3F4FA;
+    border-radius: 10px
 }
 
 .tabs button {
@@ -221,7 +222,7 @@ body .button:hover {
 }
 
 .tabs button:hover {
-    background-color: E2E3ED;
+    background-color: #e2e3ed;
 }
 
 .tabs button.active {
