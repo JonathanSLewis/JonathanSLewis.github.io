@@ -202,6 +202,45 @@ body .button:hover {
     border-radius: 10px;
     padding: 20px;
 }
+
+/* Style the tab */
+.tabs {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tabs button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tabs button:hover {
+    background-color: #ddd;
+}
+
+.tabs button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 20px;
+    border-top: none;
+}
+
+/* Show the first tab by default */
+.tabcontent:first-of-type {
+    display: block;
+}
+
 <style>
         /* Arboria Black */
         @font-face {
