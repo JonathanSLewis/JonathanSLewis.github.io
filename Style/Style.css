@@ -209,9 +209,8 @@ body .button:hover {
     justify-content: flex-start;
     gap: 7px;
     flex-wrap: wrap;
-    padding: 7px;
     overflow: hidden;
-    background-color: #F3F4FA;
+    background-color: #fff;
     border-radius: 10px
 }
 
@@ -225,16 +224,19 @@ body .button:hover {
     transition: 0.3s;
     font-size: 17px;
     border-radius: 10px;
+    color: #c6c6c6;
 }
 
 .tabs button:hover {
     background-color: #e2e3ed;
     border-radius: 10px;
+    color: #002e64;
 }
 
 .tabs button.active {
     background-color: #b3d6ff;
     border-radius: 10px;
+    color: #002e64;
 }
 
 /* Style the tab content */
