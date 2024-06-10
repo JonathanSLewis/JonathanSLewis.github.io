@@ -242,7 +242,7 @@ body .button:hover {
 /* Style the tab content */
 .tabcontent {
     display: none;
-    padding: 0px;
+    padding: 10px 0 0;
     border-top: none;
 }
 
