@@ -173,18 +173,8 @@
             // Hide all tab contents
             tabcontent = document.getElementsByClassName("tabcontent");
             for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
+                tabcontent[i].style.display = "contents";
             }
-                
-            // Remove the active class from all tab links
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-
-            // Show the current tab and add an active class to the button that opened the tab
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " active";
 
             // Remove the background color of all tab links
             tablinks = document.getElementsByClassName("tablinks");
@@ -195,11 +185,6 @@
             // Show the current tab, and add an "active" class to the button that opened the tab
             document.getElementById(tabName).style.display = "block";
             evt.currentTarget.className += " active";
-            }
-
-            // Ensure the first tab is active by default
-            document.addEventListener("DOMContentLoaded", function() {
-                document.querySelector(".tablinks").click();
             }
         </script>
     </footer>
