@@ -144,7 +144,7 @@ body .button:hover {
     border-radius: 10px;
     transition: transform 0.3s ease; /* Smooth transition for the hover effect */
     flex: 1 1 calc(33.333% - 20px);
-    max-height: 290px;
+    box-sizing: border-box;
 }
 
 .portfolio-item:hover {
@@ -206,10 +206,16 @@ body .button:hover {
     color: white;
     text-decoration: none;
 }
+
 /* Responsive Styles */
 @media (max-width: 989px) {
+    .section-content {
+        justify-content: flex-start; /* Align items to the start */
+    }
+
     .portfolio-item {
         flex: 1 1 calc(50% - 20px); /* 2 columns at 989px and below */
+        max-width: calc(50% - 20px);
     }
 }
 
