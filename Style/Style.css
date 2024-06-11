@@ -143,6 +143,7 @@ body .button:hover {
     max-width: 290px; /* Adjust according to your design */
     border-radius: 10px;
     transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+    flex: 1 1 calc(33.333% - 20px);
 }
 
 .portfolio-item:hover {
@@ -213,7 +214,6 @@ body .button:hover {
     background-color: #F3F4FA;
     border-radius: 10px;
     padding: 20px;
-    flex: 1 1 calc(33.333% - 20px); /* Default to 3 columns */
 }
 
 /* Style the tab */
