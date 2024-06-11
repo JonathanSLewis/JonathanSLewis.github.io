@@ -140,7 +140,7 @@ body .button:hover {
 }
 
 .portfolio-item:hover {
-    transform: translateY(-10px); /* Move the element up by 10px on hover */
+    transform: translateY(-5px); /* Move the element up by 5px on hover */
 }
 .portfolio-image {
     position: relative;
