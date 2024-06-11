@@ -252,7 +252,7 @@ body .button:hover {
 }
 
 .tabs button {
-    background-color: inherit;
+    background-color: #f5f5f5;
     float: left;
     border: none;
     outline: none;
@@ -267,7 +267,7 @@ body .button:hover {
 .tabs button:hover {
     background-color: #e2e3ed;
     border-radius: 10px;
-    color: #002e64;
+    color: #5c5c5c;
 }
 
 .tabs button.active {
