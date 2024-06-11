@@ -96,6 +96,7 @@ img {
     max-width: 300px; /* Ensure image doesn't exceed its container */
     min-width: 290px;
     display: flex;
+    flex-firection: column;
 }
 
 .text-column {
