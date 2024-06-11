@@ -140,7 +140,7 @@ body .button:hover {
 .portfolio-item {
     position: relative;
     width: 100%;
-    max-width: 100%; /* Adjust according to your design */
+    max-width: calc(33.333% - 20px); /* Adjust according to your design */
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for the hover effect */
     flex: 1 1 calc(33.333% - 20px);
