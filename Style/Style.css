@@ -141,7 +141,7 @@ body .button:hover {
 
 .portfolio-item:hover {
     transform: translateY(-5px); /* Move the element up by 5px on hover */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Drop shadow effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Drop shadow effect */
 }
 .portfolio-image {
     position: relative;
