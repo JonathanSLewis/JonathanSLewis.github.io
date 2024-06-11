@@ -136,8 +136,12 @@ body .button:hover {
     width: 100%;
     max-width: 290px; /* Adjust according to your design */
     border-radius: 10px;
+    transition: transform 0.3s ease; /* Smooth transition for the hover effect */
 }
 
+.portfolio-item:hover {
+    transform: translateY(-10px); /* Move the element up by 10px on hover */
+}
 .portfolio-image {
     position: relative;
     overflow: hidden;
