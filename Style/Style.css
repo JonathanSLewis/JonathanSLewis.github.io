@@ -205,6 +205,18 @@ body .button:hover {
     color: white;
     text-decoration: none;
 }
+/* Responsive Styles */
+@media (max-width: 989px) {
+    .portfolio-item {
+        flex: 1 1 calc(50% - 20px); /* 2 columns at 989px and below */
+    }
+}
+
+@media (max-width: 600px) {
+    .portfolio-item {
+        flex: 1 1 100%; /* 1 column at 600px and below */
+    }
+}
 
 .box {
     display: flex;
