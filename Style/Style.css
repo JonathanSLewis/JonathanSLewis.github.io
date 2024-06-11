@@ -103,19 +103,18 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+}
 .text-column p {
     margin: 0;
 }
 
-}
 .button-container {
     display: flex;
     flex-direction: row;
     justify-content: start; /* Align buttons to the bottom */
     gap: 10px;
     inline-size: fit-content;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 body .button {
