@@ -18,6 +18,7 @@ body {
 .container {
         max-width: 960px;
         margin: 0 auto;
+        padding: 20px;
     }
 
 section {
@@ -98,12 +99,16 @@ img {
 }
 
 .text-column {
-    flex: 1; /* Text column takes remaining space */
-    min-width: 290px;
+    flex: 2; /* Text column takes remaining space */
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-height: 300px;
+
+.text-column p {
+    margin: 0;
+}
+
 }
 .button-container {
     display: flex;
@@ -111,6 +116,7 @@ img {
     justify-content: start; /* Align buttons to the bottom */
     gap: 10px;
     inline-size: fit-content;
+    margin-top: 20px;
 }
 
 body .button {
