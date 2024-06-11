@@ -142,7 +142,7 @@ body .button:hover {
     width: 100%;
     max-width: 100%; /* Adjust according to your design */
     border-radius: 10px;
-    transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for the hover effect */
     flex: 1 1 calc(33.333% - 20px);
     box-sizing: border-box;
     max-height: 290px;
@@ -225,6 +225,7 @@ body .button:hover {
 @media (max-width: 600px) {
     .portfolio-item {
         flex: 1 1 100%; /* 1 column at 600px and below */
+        max-width: 100%;
     }
 }
 
