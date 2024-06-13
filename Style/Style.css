@@ -288,6 +288,31 @@ body .button:hover {
     display: block;
 }
 
+/* Collapsible Styles */
+.collapsible {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.collapsible.active, .collapsible:hover {
+    background-color: #0056b3;
+}
+
+.collapsible-content {
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
 <style>
         /* Arboria Black */
         @font-face {
