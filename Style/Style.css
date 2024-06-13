@@ -288,6 +288,25 @@ body .button:hover {
     display: block;
 }
 
+/* Expand */
+.expandable-content {
+    display: none;
+    margin-top: 10px;
+}
+
+.expand-btn {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0;
+}
+
+.expand-btn:hover {
+    text-decoration: underline;
+}
+
 <style>
         /* Arboria Black */
         @font-face {
