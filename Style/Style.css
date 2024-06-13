@@ -298,7 +298,7 @@ body .button:hover {
 }
 
 .expandable-content p {
-    margin: 0;
+    margin: 3px 0 0;
 }
 
 .blurred-text::before {
