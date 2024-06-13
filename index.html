@@ -363,12 +363,12 @@
 
                 if (textColumn.classList.contains('expanded')) {
                     textColumn.classList.remove('expanded');
-                    this.innerHTML = 'Read more &#9660;';
+                    this.innerHTML = '+ Read more';
                     expandableContent.style.display = "none";
                     blurredText.style.display = "block";
                 } else {
                     textColumn.classList.add('expanded');
-                    this.innerHTML = 'Read less &#9650;';
+                    this.innerHTML = '- Read less';
                     expandableContent.style.display = "block";
                     blurredText.style.display = "none";
                 }
