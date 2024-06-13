@@ -42,6 +42,7 @@
                         </div>
                         <div class="text-column">
                             <p>Managing B2B accounts for a corporate software. Onboarding new clients & monthly discussions with current clients to better understand their everyday problems and needs and translating that insight over to the development team.</p>
+                            <div class="blurred-text" data-blur="Handle Catapult’s partnerships in all phases. Primary focus in creating exceptional experiences for our customers."></div>
                             <div class="expandable-content" style="display: none;">
                                 <p>Additional detailed information about the work experience goes here. This text will be shown when the user clicks "Read more".</p>
                             </div>
@@ -353,21 +354,28 @@
             }
         </script>
         <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                document.querySelectorAll('.expand-btn').forEach(button => {
-                    button.addEventListener('click', function() {
-                        const expandableContent = this.previousElementSibling;
-                        if (expandableContent.style.display === "none" || expandableContent.style.display === "") {
-                            expandableContent.style.display = "block";
-                            this.innerHTML = '- Read less';
-                        } else {
-                            expandableContent.style.display = "none";
-                            this.innerHTML = '+ Read more';
-                        }
-                    });
-                });
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll('.expand-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const textColumn = this.closest('.text-column');
+                const expandableContent = textColumn.querySelector('.expandable-content');
+                const blurredText = textColumn.querySelector('.blurred-text');
+
+                if (textColumn.classList.contains('expanded')) {
+                    textColumn.classList.remove('expanded');
+                    this.innerHTML = 'Read more &#9660;';
+                    expandableContent.style.display = "none";
+                    blurredText.style.display = "block";
+                } else {
+                    textColumn.classList.add('expanded');
+                    this.innerHTML = 'Read less &#9650;';
+                    expandableContent.style.display = "block";
+                    blurredText.style.display = "none";
+                }
             });
-        </script>
+        });
+    });
+</script>
     </footer>
 </body>
 </html>
