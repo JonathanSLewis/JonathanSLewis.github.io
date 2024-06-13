@@ -318,6 +318,9 @@ body .button:hover {
     position: relative;
     height: 1.2em; /* Adjust to match the line height of your text */
     overflow: hidden;
+    color: rgba(0, 0, 0, 0.5); /* Adjust color and opacity as needed */
+    filter: blur(2px); /* Adjust blur amount as needed */
+    margin-top: 10px; /* Adjust spacing as needed */
 }
 
 .text-column.expanded .expandable-content {
