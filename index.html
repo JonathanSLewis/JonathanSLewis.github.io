@@ -42,6 +42,10 @@
                         </div>
                         <div class="text-column">
                             <p>Managing B2B accounts for a corporate software. Onboarding new clients & monthly discussions with current clients to better understand their everyday problems and needs and translating that insight over to the development team.</p>
+                            <div class="expandable-content" style="display: none;">
+                                <p>Additional detailed information about the work experience goes here. This text will be shown when the user clicks "Read more".</p>
+                            </div>
+                            <button class="expand-btn">Read more &#9660;</button>    
                         </div>
                     </div>
                     <div class="box">
@@ -347,6 +351,22 @@
             document.getElementById(tabName).style.display = "block";
             evt.currentTarget.className += " active";
             }
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                document.querySelectorAll('.expand-btn').forEach(button => {
+                    button.addEventListener('click', function() {
+                        const expandableContent = this.previousElementSibling;
+                        if (expandableContent.style.display === "none" || expandableContent.style.display === "") {
+                            expandableContent.style.display = "block";
+                            this.innerHTML = 'Read less &#9650;';
+                        } else {
+                            expandableContent.style.display = "none";
+                            this.innerHTML = 'Read more &#9660;';
+                        }
+                    });
+                });
+            });
         </script>
     </footer>
 </body>
