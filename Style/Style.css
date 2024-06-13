@@ -291,20 +291,23 @@ body .button:hover {
 /* Expand */
 .expandable-content {
     display: none;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .expand-btn {
     background: none;
     border: none;
-    color: #007bff;
+    color: #002e64;
     cursor: pointer;
     font-size: 16px;
     padding: 0;
+    display: flex;
+    font: unset;
+    font-size: 15px;
 }
 
 .expand-btn:hover {
-    text-decoration: underline;
+    color: black;
 }
 
 <style>
