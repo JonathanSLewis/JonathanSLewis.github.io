@@ -311,6 +311,7 @@ body .button:hover {
     color: rgba(0, 0, 0, 0.3); /* Adjust color and opacity as needed */
     filter: blur(3px); /* Adjust blur amount as needed */
     z-index: -1;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
 }
 
 /* Styles for the blurred effect */
@@ -318,9 +319,10 @@ body .button:hover {
     position: relative;
     height: 1.2em; /* Adjust to match the line height of your text */
     overflow: hidden;
-    color: rgba(0, 0, 0, 0.5); /* Adjust color and opacity as needed */
-    filter: blur(2px); /* Adjust blur amount as needed */
+    color: rgba(0, 0, 0, 0.6); /* Adjust color and opacity as needed */
+    filter: blur(1px); /* Adjust blur amount as needed */
     margin-top: 10px; /* Adjust spacing as needed */
+    font-size: 18px;
 }
 
 .text-column.expanded .expandable-content {
