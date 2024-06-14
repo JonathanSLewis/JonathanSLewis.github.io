@@ -70,6 +70,7 @@ img {
 .logo {
     max-width: 100%;
     height: auto;
+    border-radius: 0px;
 }
 
 .section-title h2 {
