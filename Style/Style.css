@@ -287,7 +287,7 @@ body .button:hover {
 
 /* Show the first tab by default */
 .tabcontent:first-of-type {
-    display: block;
+    display: flex;
 }
 
 .expandable-content {
