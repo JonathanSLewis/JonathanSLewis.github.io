@@ -102,14 +102,14 @@
         <section>
             <h2>Examples of work</h2>
             <div class="tabs">
-        <button id="defaultOpen" class="tablinks active" onclick="openTab(event, 'Website Design')">Website Design</button>
-        <button class="tablinks" onclick="openTab(event, 'Marketing Collateral')">Marketing Collateral</button>
-        <button class="tablinks" onclick="openTab(event, 'Visual Identity Enhancement')">Visual Identity Enhancement</button>
-        <button class="tablinks" onclick="openTab(event, 'Motion Graphics')">Motion Graphics</button>
-        <button class="tablinks" onclick="openTab(event, 'UI/UX')">UI/UX</button>
-        </div>
+                <button id="defaultOpen" class="tablinks" onclick="openTab(event, 'Website Design')">Website Design</button>
+                <button class="tablinks" onclick="openTab(event, 'Marketing Collateral')">Marketing Collateral</button>
+                <button class="tablinks" onclick="openTab(event, 'Visual Identity Enhancement')">Visual Identity Enhancement</button>
+                <button class="tablinks" onclick="openTab(event, 'Motion Graphics')">Motion Graphics</button>
+                <button class="tablinks" onclick="openTab(event, 'UI/UX')">UI/UX</button>
+            </div>
     
-        <div id="Website Design" class="tabcontent" style="display: block;">
+        <div id="Website Design" class="tabcontent">
             <div class="section-content">
                 <div class="portfolio-item">
                     <a href="https://clarisights.com/">
@@ -312,7 +312,7 @@
                 for (i = 0; i < tablinks.length; i++) {
                     tablinks[i].className = tablinks[i].className.replace(" active", "");
                 }
-                document.getElementById(tabName).style.display = "block";
+                document.getElementById(tabName).style.display = "flex";
                 evt.currentTarget.className += " active";
             }
     
@@ -323,7 +323,7 @@
                 button.addEventListener('click', function() {
                     const expandableContent = this.previousElementSibling;
                     if (expandableContent.style.display === "none" || expandableContent.style.display === "") {
-                        expandableContent.style.display = "flex";
+                        expandableContent.style.display = "block";
                         this.innerHTML = '- Read less';
                     } else {
                         expandableContent.style.display = "none";
