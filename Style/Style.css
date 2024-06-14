@@ -15,6 +15,16 @@ body {
     h3 {margin: 0; /* Remove the top margin */}
     h4 {margin: 0; /* Remove the top margin */}
 
+    /* Import Poppins font */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    
+    /* Example: Media query for mobile devices */
+    @media (max-width: 600px) {
+        body {
+            font-family: 'Poppins', Arial, sans-serif; /* Adjust as needed */
+        }
+    }
+
 .container {
         max-width: 960px;
         margin: 0 auto;
@@ -325,6 +335,4 @@ body .button:hover {
     color: black;
 }
 
-/* Import Poppins font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
