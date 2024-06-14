@@ -1,5 +1,5 @@
 body {
-    font-family: Poppins, Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     background-color: #F3F4FA;
     margin: 20px;
     padding: 0;
@@ -14,7 +14,7 @@ body {
     h2 {margin: 0; /* Remove the top margin */}
     h3 {margin: 0; /* Remove the top margin */}
     h4 {margin: 0; /* Remove the top margin */}
-    
+
 .container {
         max-width: 960px;
         margin: 0 auto;
@@ -324,3 +324,7 @@ body .button:hover {
 .expand-btn:hover {
     color: black;
 }
+
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
