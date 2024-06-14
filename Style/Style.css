@@ -64,7 +64,14 @@ footer ~ * {
 img {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
 }
+
+logo {
+    max-width: 100%;
+    height: auto;
+}
+
 .section-title h2 {
     width: 100%; /* Title takes full width */
 }
@@ -296,89 +303,16 @@ body .button:hover {
 }
 
 .expand-btn {
+    display: flex;
     background: none;
     border: none;
     color: #002e64;
     cursor: pointer;
     font-size: 18px;
-    padding: 20px;
+    padding: 20px 0 0;
     font: unset;
 }
 
 .expand-btn:hover {
     color: black;
 }
-
-<style>
-        /* Arboria Black */
-        @font-face {
-            font-family: 'Arboria Black';
-            src: url('fonts/Arboria-Black.ttf') format('truetype');
-        }
-
-        /* Arboria Black Italic */
-        @font-face {
-            font-family: 'Arboria Black Italic';
-            src: url('fonts/Arboria-BlackItalic.ttf') format('truetype');
-        }
-
-        /* Arboria Bold */
-        @font-face {
-            font-family: 'Arboria Bold';
-            src: url('fonts/Arboria-Bold.ttf') format('truetype');
-        }
-
-        /* Arboria Bold Italic */
-        @font-face {
-            font-family: 'Arboria Bold Italic';
-            src: url('fonts/Arboria-BoldItalic.ttf') format('truetype');
-        }
-
-        /* Arboria Book */
-        @font-face {
-            font-family: 'Arboria Book';
-            src: url('fonts/Arboria-Book.ttf') format('truetype');
-        }
-
-        /* Arboria Book Italic */
-        @font-face {
-            font-family: 'Arboria Book Italic';
-            src: url('fonts/Arboria-BookItalic.ttf') format('truetype');
-        }
-
-        /* Arboria Light */
-        @font-face {
-            font-family: 'Arboria Light';
-            src: url('fonts/Arboria-Light.ttf') format('truetype');
-        }
-
-        /* Arboria Light Italic */
-        @font-face {
-            font-family: 'Arboria Light Italic';
-            src: url('fonts/Arboria-LightItalic.ttf') format('truetype');
-        }
-
-        /* Arboria Medium */
-        @font-face {
-            font-family: 'Arboria Medium';
-            src: url('fonts/Arboria-Medium.ttf') format('truetype');
-        }
-
-        /* Arboria Medium Italic */
-        @font-face {
-            font-family: 'Arboria Medium Italic';
-            src: url('fonts/Arboria-MediumItalic.ttf') format('truetype');
-        }
-
-        /* Arboria Thin */
-        @font-face {
-            font-family: 'Arboria Thin';
-            src: url('fonts/Arboria-Thin.ttf') format('truetype');
-        }
-
-        /* Arboria Thin Italic */
-        @font-face {
-            font-family: 'Arboria Thin Italic';
-            src: url('fonts/Arboria-ThinItalic.ttf') format('truetype');
-        }
-    </style>
