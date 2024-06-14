@@ -249,11 +249,13 @@ body .button:hover {
 
 /* Style the tab */
 .tabs {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
     flex-wrap: wrap;
     overflow: hidden;
     background-color: #fff;
-    border-radius: 10px
+    
 }
 
 .tabs button {
