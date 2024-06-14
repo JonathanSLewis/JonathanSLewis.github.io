@@ -332,22 +332,23 @@
                 });
             });
         </script>
-        
+
         <script>
-            document.querySelectorAll('.expand-btn').forEach(button => {
-                button.addEventListener('click', function() {
-                    const expandableContent = this.previousElementSibling;
-                    if (expandableContent.style.display === "none" || expandableContent.style.display === "") {
-                        expandableContent.style.display = "block";
-                        this.innerHTML = '- Read less';
-                    } else {
-                        expandableContent.style.display = "none";
-                        this.innerHTML = '+ Read more';
-                    }
+            document.addEventListener("DOMContentLoaded", function() {
+                document.querySelectorAll('.expand-btn').forEach(button => {
+                    button.addEventListener('click', function() {
+                        const expandableContent = this.previousElementSibling;
+                        if (expandableContent.style.display === "none" || expandableContent.style.display === "") {
+                            expandableContent.style.display = "block";
+                            this.innerHTML = '- Read less';
+                        } else {
+                            expandableContent.style.display = "none";
+                            this.innerHTML = '+ Read more';
+                        }
+                    });
                 });
             });
-        });
-    </script>
+        </script>
     </footer>
 </body>
 </html>
