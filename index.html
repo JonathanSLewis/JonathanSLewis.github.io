@@ -102,11 +102,11 @@
         <section>
             <h2>Examples of work</h2>
             <div class="tabs">
-                <button class="tablinks active" onclick="openTab(event, 'Website Design')">Website Design</button>
-                <button class="tablinks" onclick="openTab(event, 'Marketing Collateral')">Marketing Collateral</button>
-                <button class="tablinks" onclick="openTab(event, 'Visual Identity Enhancement')">Visual Identity Enhancement</button>
-                <button class="tablinks" onclick="openTab(event, 'Motion Graphics')">Motion Graphics</button>
-                <button class="tablinks" onclick="openTab(event, 'UI/UX')">UI/UX</button>
+                <button class="tablinks active">Website Design</button>
+                <button class="tablinks">Marketing Collateral</button>
+                <button class="tablinks">Visual Identity Enhancement</button>
+                <button class="tablinks">Motion Graphics</button>
+                <button class="tablinks">UI/UX</button>
             </div>
     
         <div id="Website Design" class="tabcontent" style="display: block;">
@@ -305,18 +305,21 @@
             document.addEventListener("DOMContentLoaded", function() {
                 var coll = document.querySelector(".collapsible");
                 var content = document.querySelector(".collapsible-content");
-                coll.addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    if (content.style.display === "block") {
-                        content.style.display = "none";
-                    } else {
-                        content.style.display = "block";
-                    }
-                });
-        
+            
+                if (coll && content) {
+                    coll.addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        if (content.style.display === "block") {
+                            content.style.display = "none";
+                        } else {
+                            content.style.display = "block";
+                        }
+                    });
+                }
+            
                 var tablinks = document.querySelectorAll(".tablinks");
                 var tabcontent = document.querySelectorAll(".tabcontent");
-        
+            
                 tablinks.forEach(function(tablink) {
                     tablink.addEventListener("click", function(event) {
                         tabcontent.forEach(function(content) {
@@ -325,11 +328,18 @@
                         tablinks.forEach(function(link) {
                             link.classList.remove("active");
                         });
-                        var target = document.getElementById(event.currentTarget.textContent.trim().replace(/\s/g, ""));
-                        target.style.display = "block";
+            
+                        var tabName = event.currentTarget.textContent.trim().replace(/\s/g, "");
+                        var target = document.getElementById(tabName.replace(/ /g, ""));
+                        if (target) {
+                            target.style.display = "block";
+                        }
                         event.currentTarget.classList.add("active");
                     });
                 });
+            
+                // Set the default open tab
+                document.querySelector(".tablinks.active").click();
             });
         </script>
 
