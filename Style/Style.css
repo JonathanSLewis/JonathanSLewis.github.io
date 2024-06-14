@@ -288,13 +288,15 @@ body .button:hover {
     display: none;
     padding: 10px 0 0;
     border-top: none;
-    flex-direction: column;
-    gap: 20px;
 }
 
-/* Show the first tab by default */
-.tabcontent:first-of-type {
-    display: flex;
+.tabcontent.active {
+    display: block;
+}
+
+.tablinks.active {
+    background-color: #007bff;
+    color: white;
 }
 
 .expandable-content {
