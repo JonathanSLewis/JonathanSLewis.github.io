@@ -109,7 +109,7 @@
                 <button class="tablinks">UI/UX</button>
             </div>
     
-        <div id="Website Design" class="tabcontent" style="display: block;">
+        <div id="WebsiteDesign" class="tabcontent" style="display: block;">
             <div class="section-content">
                 <div class="portfolio-item">
                     <a href="https://clarisights.com/">
@@ -150,7 +150,7 @@
             </div>
         </div>
     
-        <div id="Marketing Collateral" class="tabcontent">
+        <div id="MarketingCollateral" class="tabcontent">
             <p> All created material is unfortunately strictly confidential. Instead, you'll find a link to the companies' websites </p>
             <div class="section-content">
                 <div class="image-column">
@@ -172,7 +172,7 @@
             </div>
         </div>
     
-        <div id="Visual Identity Enhancement" class="tabcontent">
+        <div id="VisualIdentityEnhancement" class="tabcontent">
             <div class="section-content">
                 <div class="portfolio-item">
                     <a href="https://clarisights.com/">
@@ -213,7 +213,7 @@
             </div>
         </div>
     
-        <div id="Motion Graphics" class="tabcontent">
+        <div id="MotionGraphics" class="tabcontent">
             <div class="section-content">
                  <div class="portfolio-item">
                     <a href="https://areena.yle.fi/1-62871442">
@@ -329,8 +329,8 @@
                             link.classList.remove("active");
                         });
             
-                        var tabName = event.currentTarget.textContent.trim().replace(/\s/g, "");
-                        var target = document.getElementById(tabName.replace(/ /g, ""));
+                        var tabName = event.currentTarget.textContent.trim().replace(/\s+/g, "");
+                        var target = document.getElementById(tabName);
                         if (target) {
                             target.style.display = "block";
                         }
