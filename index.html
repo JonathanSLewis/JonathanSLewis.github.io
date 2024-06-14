@@ -316,7 +316,7 @@
             }
             
             // Show the current tab, and add an "active" class to the button that opened the tab
-            document.getElementById(tabName).style.display = "block";
+            document.getElementById(tabName).style.display = "flex";
             evt.currentTarget.className += " active";
             }
         </script>
@@ -326,7 +326,7 @@
                     button.addEventListener('click', function() {
                         const expandableContent = this.previousElementSibling;
                         if (expandableContent.style.display === "none" || expandableContent.style.display === "") {
-                            expandableContent.style.display = "block";
+                            expandableContent.style.display = "flex";
                             this.innerHTML = '- Read less';
                         } else {
                             expandableContent.style.display = "none";
