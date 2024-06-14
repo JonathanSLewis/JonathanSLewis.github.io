@@ -235,6 +235,11 @@ body .button:hover {
         flex: 1 1 100%; /* 1 column at 700px and below */
         max-width: 100%;
     }
+    img:not(.logo img) {
+        flex: 1 1 100%; /* 1 column at 700px and below */
+        max-width: 100%;
+        /* Add any other styles you need */
+    }
 }
 
 .box {
