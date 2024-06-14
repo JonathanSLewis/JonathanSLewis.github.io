@@ -338,11 +338,12 @@ body .button:hover {
 /* ---------------------------- ARROWS ---------------------------- */
 
 .arrow {
-  border: solid black;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 4px;
-  margin: 8px;
+    display: inline-block;
+    border: solid black;
+    width: 0;
+    height: 0; 
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
 }
 
 .right {
