@@ -102,7 +102,7 @@
         <section>
             <h2>Examples of work</h2>
             <div class="tabs">
-        <button class="tablinks active" onclick="openTab(event, 'Website Design')">Website Design</button>
+        <button id="defaultOpen" class="tablinks active" onclick="openTab(event, 'Website Design')">Website Design</button>
         <button class="tablinks" onclick="openTab(event, 'Marketing Collateral')">Marketing Collateral</button>
         <button class="tablinks" onclick="openTab(event, 'Visual Identity Enhancement')">Visual Identity Enhancement</button>
         <button class="tablinks" onclick="openTab(event, 'Motion Graphics')">Motion Graphics</button>
@@ -299,26 +299,33 @@
         <p>&copy; <span id="currentYear"></span> Jonathan Lewis. All rights reserved.</p>
         <script>
             document.getElementById("currentYear").textContent = new Date().getFullYear();
-               
-            function openTab(evt, tabName) {
-            var i, tabcontent, tablinks;
-            
-            // Hide all tab contents
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-
-            // Remove the background color of all tab links
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            
-            // Show the current tab, and add an "active" class to the button that opened the tab
-            document.getElementById(tabName).style.display = "flex";
-            evt.currentTarget.className += " active";
-            }
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // Function to handle tab switching
+                function openTab(evt, tabName) {
+                    var i, tabcontent, tablinks;
+        
+                    // Hide all tab contents
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+        
+                    // Remove the active class from all tab links
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+        
+                    // Show the current tab, and add an "active" class to the button that opened the tab
+                    document.getElementById(tabName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+        
+                // Set the default open tab
+                document.getElementById("defaultOpen").click();
+            });
         </script>
         <script>
             document.addEventListener("DOMContentLoaded", function() {
@@ -334,6 +341,9 @@
                         }
                     });
                 });
+        
+                // Set the default open tab
+                document.getElementById("defaultOpen").click();
             });
         </script>
     </footer>
