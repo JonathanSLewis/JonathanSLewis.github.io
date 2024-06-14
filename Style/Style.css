@@ -249,9 +249,7 @@ body .button:hover {
 
 /* Style the tab */
 .tabs {
-    display: flex;
-    justify-content: flex-start;
-    gap: 7px;
+    display: block;
     flex-wrap: wrap;
     overflow: hidden;
     background-color: #fff;
