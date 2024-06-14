@@ -298,30 +298,7 @@ body .button:hover {
 }
 
 .expandable-content p {
-    margin: 3px 0 0;
-}
-
-.blurred-text::before {
-    content: attr(data-blur);
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 3px;
-    bottom: 0;
-    color: rgba(0, 0, 0, 0.2); /* Adjust color and opacity as needed */
-    filter: blur(0.2px); /* Adjust blur amount as needed */
-    z-index: -1;
-}
-
-/* Styles for the blurred effect */
-.blurred-text {
-    position: relative;
-    height: 1.2em; /* Adjust to match the line height of your text */
-    overflow: hidden;
-    color: rgba(0, 0, 0, 0.6); /* Adjust color and opacity as needed */
-    filter: blur(1px); /* Adjust blur amount as needed */
-    margin-top: 10px; /* Adjust spacing as needed */
-    font-size: 18px;
+    margin: 0;
 }
 
 .text-column.expanded .expandable-content {
@@ -329,11 +306,6 @@ body .button:hover {
     max-height: 500px; /* Adjust to the height of the content */
 }
 
-.text-column.expanded .blurred-text {
-    display: none;
-}
-
-/* ---------- end of ------------- Styles for the blurred effect --------------------- */
 
 .expand-btn {
     background: none;
