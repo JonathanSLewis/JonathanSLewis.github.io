@@ -285,7 +285,7 @@ body .button:hover {
 
 /* Style the tab content */
 .tabcontent {
-    display: flex;
+    display: none;
     padding: 10px 0 0;
     border-top: none;
     flex-direction: column;
