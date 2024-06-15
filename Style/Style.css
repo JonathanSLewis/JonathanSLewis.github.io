@@ -93,6 +93,15 @@ img {
     justify-content: flex-start; /* Spacing items evenly across the container */
     flex-wrap: wrap; /* Allow items to wrap */
     gap: 20px;
+    align
+}
+
+.section-content .image-column img {
+    display: block; /* Ensures the image behaves consistently */
+}
+
+.section-content .image-column a {
+    display: block; /* Ensures the anchor tag behaves like a block element */
 }
 
 .text-content {
