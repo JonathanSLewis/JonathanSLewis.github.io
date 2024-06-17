@@ -469,6 +469,12 @@
                             target.style.display = "block";
                         }
                         event.currentTarget.classList.add("active");
+                        
+                        function activateTab(tabName) {
+                        var tabButton = document.querySelector(`.tablinks[onclick*="'${tabName}'"]`);
+                        tabButton.click();
+                        tabButton.scrollIntoView({ behavior: 'smooth' });
+                    }
                     });
                 });
             
