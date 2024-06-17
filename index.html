@@ -128,7 +128,7 @@
                                     <li>Organised multiple successful <a href="https://innopipe.ai/events/" target="_blank">online & onsite events</a that boosted brand visibility and client engagement.</li>
                                     <li>Improved website traffic and user experience through effective development and content updates.</li>
                                     <li>Played a key role in achieving internal sales and marketing goals by aligning strategies with business objectives.</li>
-                                    <li>Personally coached 27 entrepreneurs with my skills and knowledge to improve their marketing efforts. Read more in the <a href="#educational-section" onclick="activateTab('Educational')">educational section</a></li>
+                                    <li>Personally coached 27 entrepreneurs with my skills and knowledge to improve their marketing efforts. Read more in the <a href="#Educational" onclick="activateTab('Educational')">educational section</a></li>
                                 </ul>
                                 <h4 style="margin-top: 10px;">💡 Skills and Tools Used</h4>
                                 <ul>
@@ -434,54 +434,66 @@
         <script>
             document.getElementById("currentYear").textContent = new Date().getFullYear();
         </script>
-        
-       <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                var coll = document.querySelector(".collapsible");
-                var content = document.querySelector(".collapsible-content");
-            
-                if (coll && content) {
-                    coll.addEventListener("click", function() {
-                        this.classList.toggle("active");
-                        if (content.style.display === "block") {
-                            content.style.display = "none";
-                        } else {
-                            content.style.display = "block";
-                        }
-                    });
-                }
-            
-                var tablinks = document.querySelectorAll(".tablinks");
-                var tabcontent = document.querySelectorAll(".tabcontent");
-            
-                tablinks.forEach(function(tablink) {
-                    tablink.addEventListener("click", function(event) {
-                        tabcontent.forEach(function(content) {
-                            content.style.display = "none";
-                        });
-                        tablinks.forEach(function(link) {
-                            link.classList.remove("active");
-                        });
-            
-                        var tabName = event.currentTarget.textContent.trim().replace(/\s+/g, "");
-                        var target = document.getElementById(tabName);
-                        if (target) {
-                            target.style.display = "block";
-                        }
-                        event.currentTarget.classList.add("active");
-                        
-                        function activateTab(tabName) {
-                        var tabButton = document.querySelector(`.tablinks[onclick*="'${tabName}'"]`);
-                        tabButton.click();
-                        tabButton.scrollIntoView({ behavior: 'smooth' });
-                    }
-                    });
-                });
-            
-                // Set the default open tab
-                document.querySelector(".tablinks.active").click();
-            });
-        </script>
+
+        <script>
+       document.addEventListener("DOMContentLoaded", function() {
+    var coll = document.querySelector(".collapsible");
+    var content = document.querySelector(".collapsible-content");
+
+    if (coll && content) {
+        coll.addEventListener("click", function() {
+            this.classList.toggle("active");
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+
+    var tablinks = document.querySelectorAll(".tablinks");
+    var tabcontent = document.querySelectorAll(".tabcontent");
+
+    function openTab(tabName) {
+        tabcontent.forEach(function(content) {
+            content.style.display = "none";
+        });
+        tablinks.forEach(function(link) {
+            link.classList.remove("active");
+        });
+
+        var target = document.getElementById(tabName);
+        if (target) {
+            target.style.display = "block";
+            var tabLink = document.querySelector(".tablinks[onclick*='" + tabName + "']");
+            if (tabLink) {
+                tabLink.classList.add("active");
+            }
+        }
+    }
+
+    tablinks.forEach(function(tablink) {
+        tablink.addEventListener("click", function(event) {
+            var tabName = event.currentTarget.textContent.trim().replace(/\s+/g, "");
+            openTab(tabName);
+        });
+    });
+
+    // Handle hash change
+    function handleHashChange() {
+        if (window.location.hash) {
+            var hash = window.location.hash.substring(1).replace(/\s+/g, "");
+            openTab(hash);
+        } else {
+            // Set the default open tab
+            document.querySelector(".tablinks.active").click();
+        }
+    }
+
+    window.addEventListener("hashchange", handleHashChange);
+    handleHashChange(); // To handle the initial load with a hash
+});
+
 
         <script>
             document.addEventListener("DOMContentLoaded", function() {
