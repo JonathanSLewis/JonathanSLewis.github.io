@@ -290,15 +290,15 @@ body .button:hover {
 }
 
 .tabs button {
-    background-color: #ffffff;
+    background-color: #DBEAFC;
     float: left;
-    border: none;
+    border: solid;
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
     font-size: 17px;
-    color: #b3d6ff;
+    color: #2E6DB6;
     border-radius: 10px;
     border-width: 2px;
     border-color: #b3d6ff;
